@@ -17,7 +17,7 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 
 Bonus:
 1- oltre al click sul pulsante per la aggiunta del task,
- intercettare anche il tasto ENTER per aggiungere il todo alla lista
+ intercettare anche il tasto ENTER per aggiungere il todo alla lista  V
 
 2- cliccando sul testo dell'item, invertire il valore della proprietà
 done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
@@ -36,11 +36,11 @@ createApp({
 
             tasks: [
                 {
-                    text : "comprare i tovaglioli",
+                    text : "Comprare i tovaglioli",
                     done : false,
                 },
                 {
-                    text : "andare in palestra",
+                    text : "Andare in palestra",
                     done : false,
                 },
                 {
