@@ -32,7 +32,31 @@ createApp({
 
         return {
 
-            messagge : "Hello world",
+            tasks: [
+                {
+                    text : "comprare i tovaglioli",
+                    done : false,
+                },
+                {
+                    text : "andare in palestra",
+                    done : false,
+                },
+                {
+                    text : "Salutare la nonna",
+                    done : false,
+                },
+                {
+                    text : "Leggere 50 pagine",
+                    done : true,
+                },
+                {
+                    text : "Fare 30 flessioni",
+                    done : true,
+                }
+                
+
+             ],
+            
         }
     }
 }).mount(`#app`);
