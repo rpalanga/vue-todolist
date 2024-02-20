@@ -20,7 +20,7 @@ Bonus:
  intercettare anche il tasto ENTER per aggiungere il todo alla lista  V
 
 2- cliccando sul testo dell'item, invertire il valore della proprietà
-done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
+done del todo corrispondente (se done era uguale a false, impostare true e viceversa) 
 
 */
 
@@ -49,11 +49,11 @@ createApp({
                 },
                 {
                     text : "Leggere 50 pagine",
-                    done : true,
+                    done : false,
                 },
                 {
                     text : "Fare 30 flessioni",
-                    done : true,
+                    done : false,
                 }
                 
 
@@ -74,7 +74,26 @@ createApp({
             this.tasks.push({text: this.newTask, done:false})
 
             this.newTask = "";
-        }
+        },
+
+        /* Prova chiedere domani a Gabriel */
+        
+        // changeTheDone(currentTask){
+
+        //     console.log(currentTask)
+
+
+        //     if (currentTask == true){
+                
+
+        //         currentTask = false;
+
+        //     } else {
+
+        //         currentTask = true;
+        //     }
+
+        // }
 
     }
     
