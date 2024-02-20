@@ -26,17 +26,25 @@
 
     <div id="app" class="container py-3 ">
 
-        <h1 class="text-center m-3 "> Todo List</h1>
+        <h1 class="text-center m-3 display-2 fw-bolder "> Todo List</h1>
 
-        <ul>
-            <li v-for="(currentTask,index) in tasks" :class="currentTask.done == true ? `text-decoration-line-through` : `` " class="d-flex justify-content-between w-100 p-3 ">
+        <ul class="list-unstyled">
+            <li v-for="(currentTask,index) in tasks" :class="currentTask.done == true ? `text-decoration-line-through` : `` " class="d-flex justify-content-between w-100 p-3 border ">
                 {{ currentTask.text }}
 
                 <span @click="deleteTask(index)" >
-                    <i   class="fa-solid fa-square-xmark"></i>
+                    <i   class="fa-solid fa-square-xmark fs-4"></i>
                 </span>
             </li>
         </ul>
+
+        <div class="input-group mb-3">
+
+            <input type="text" class="form-control" placeholder="Add to the Tasks" aria-label="Add to the Tasks" aria-describedby="button-addon2" v-model="newTask">
+
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="addTask()">Aggiungi</button>
+
+          </div>
 
 
 

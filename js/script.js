@@ -3,11 +3,11 @@
 
 MILESTONE 1
 Stampare all'interno di una lista HTML un item per ogni todo.
-Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
+Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.  V
 
 MILESTONE 2
 Visualizzare a fianco ad ogni item ha una ":x:": cliccando su di essa,
-il todo viene rimosso dalla lista.
+il todo viene rimosso dalla lista.                                      V
 
 MILESTONE 3
 Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante
@@ -31,6 +31,8 @@ createApp({
     data() {
 
         return {
+
+            newTask : "",
 
             tasks: [
                 {
@@ -65,6 +67,13 @@ createApp({
 
             this.tasks.splice(index, 1);
 
+        },
+
+        addTask(){
+
+            this.tasks.push({text: this.newTask, done:false})
+
+            this.newTask = "";
         }
 
     }
