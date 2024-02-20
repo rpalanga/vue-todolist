@@ -31,8 +31,9 @@
         <ul>
             <li v-for="(currentTask,index) in tasks" :class="currentTask.done == true ? `text-decoration-line-through` : `` " class="d-flex justify-content-between w-100 p-3 ">
                 {{ currentTask.text }}
-                <span>
-                    <i class="fa-solid fa-square-xmark"></i>
+
+                <span @click="deleteTask(index)" >
+                    <i   class="fa-solid fa-square-xmark"></i>
                 </span>
             </li>
         </ul>
